@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <section class="container">
+      <section class="result">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <p class="points">76</p>
+          <p class="paragraphs">of 100</p>
+        </div>
+        <h1>Great</h1>
+        <p class="paragraphs">You scored higher than 65% of the people who have taken these tests.</p>
+
+      </section>
+
+      <section class="summary">
+        <div class="sum-title">
+          <h3>Summary</h3>
+        </div>
+
+        <div id="boxes">
+          <div class="box" id="reaction-box">
+
+            <p class="box-title"><img src="./assets/images/icon-reaction.svg" class="icon" /><span>Reaction</span></p>
+            <p class="box-points"><span>80</span> / 100</p>
+          </div>
+
+          <div class="box" id="memory-box">
+
+            <p class="box-title"><img src="./assets/images/icon-memory.svg" class="icon" /><span>Memory</span></p>
+            <p class="box-points"><span>92</span> / 100</p>
+          </div>
+          <div class="box" id="verbal-box">
+
+            <p class="box-title"><img src="./assets/images/icon-verbal.svg" class="icon" /><span>Verbal</span></p>
+            <p class="box-points"><span>61</span> / 100</p>
+          </div>
+          <div class="box" id="visual-box">
+
+            <p class="box-title"><img src="./assets/images/icon-visual.svg" class="icon" /><span>Visual</span></p>
+            <p class="box-points"><span>72</span> / 100</p>
+          </div>
+
+          <button class="btn">Continue</button>
+        </div>
+      </section>
+    </section>
+  </header>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://eltnas.github.io/">&copy; Elton C. Nascimento</a>.
+  </div>
+
+  <script>
+    if (document.querySelector('body').offsetHeight > window.innerHeight)
+      document.querySelector('attribution').classList.add('footer-relative');
+  </script>
+</body>
+</html>
